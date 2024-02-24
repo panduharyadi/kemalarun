@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kemala Run 2024</title>
+        <meta name="description" content="Lomba lari yang diselenggarakan oleh Bhayangkari dan Yayasan Kemala Bhayangkari dalam satu wadah penyelenggaraan Tour of Kemala.">
+        <meta name="keywords" content="Kemalarun">
+        <meta name="author" content="Shreethemes">
+        <meta name="website" content="https://shreethemes.in">
+        <meta name="email" content="support@shreethemes.in">
+        <meta name="version" content="1.0.0">
+        <!-- favicon -->
+        <link href="assets/images/favicon.png" rel="shortcut icon">
+
+        <!-- Css -->
+        <!-- Main Css -->
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+        <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- PDF.js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+
+
+        <style>
+            .videowrapper { float: none; clear: both; width: 100%; position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0; } .videowrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+            .modal-backdrop {
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1040;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            }
+
+            .navbar {
+                position: sticky;
+            }
+
+            /* .card .card-bs {
+                border-radius: 40px;
+                box-shadow: #000;
+            } */
+
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .overlay img {
+                max-width: 90%;
+                max-height: 90%;
+            }
+        </style>
+    </head>
+    
+    <body class="font-poppins text-base text-black dark:text-white dark:bg-slate-900">
+
+        <!-- Loader Start -->
+        <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="assets/images/kemala.png" class="d-block mx-auto w-44" alt="">
+                </div>                
+            </div>
+        </div>
+        <!-- Loader End -->
+        
+        <!-- Navbar Start -->
+        <nav class="navbar" id="navbar">
+            <div class="container flex flex-wrap items-center justify-between">
+                <a class="navbar-brand md:me-8" href="index.html">
+                    <img src="assets/images/kemala.png" class="inline-block dark:hidden w-18" alt="">                    
+                </a>
+
+                <div class="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
+                    <!-- Navbar Button -->
+                    <ul class="list-none menu-social mb-0">
+                        <li class="inline">
+                            <a href="https://wa.me/6282113377303">
+                                <span class="login-btn-primary"><span class="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white"><i class="uil uil-whatsapp align-middle"></i></span></span>
+                                <span class="login-btn-light"><span class="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i class="uil uil-whatsapp align-middle"></i></span></span>
+                            </a>
+                            <a href="mailto:info@isport.co.id">
+                                <span class="login-btn-primary"><span class="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white"><i class="uil uil-envelope align-middle"></i></span></span>
+                                <span class="login-btn-light"><span class="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i class="uil uil-envelope align-middle"></i></span></span>
+                            </a>
+                            <a href="https://instagram.com/tourofkemala">
+                                <span class="login-btn-primary"><span class="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white"><i class="uil uil-instagram align-middle"></i></span></span>
+                                <span class="login-btn-light"><span class="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i class="uil uil-instagram align-middle"></i></span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Navbar Collapse Manu Button -->
+                    <button data-collapse="menu-collapse" type="button" class="collapse-btn inline-flex items-center ms-2 text-dark dark:text-white lg_992:hidden" aria-controls="menu-collapse" aria-expanded="false">
+                        <span class="sr-only">Navigation Menu</span>
+                        <i class="mdi mdi-menu text-[24px]"></i>
+                    </button>
+                </div>
+
+                 <!-- Navbar Manu -->
+                 <div class="navigation lg_992:order-1 lg_992:flex hidden ms-auto" id="menu-collapse">
+                    <ul class="navbar-nav" id="navbar-navlist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#schedule">Jadwal Acara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#route">Rute</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="nav-link btn btn-link" data-toggle="modal" data-target="#syaratModal">Syarat dan Ketentuan</button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="nav-link btn btn-link" data-toggle="modal" data-target="#faqModal">FAQ</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Syarat dan Ketentuan Modal -->
+<div class="modal fade" id="syaratModal" tabindex="-1" aria-labelledby="syaratModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="syaratModalLabel">Syarat dan Ketentuan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Syarat dan Ketentuan Content Goes Here -->
+                <h4 class="flex items-center justify-center">
+                    SYARAT DAN KETENTUAN
+                    <br>
+                  </h4>
+                  <h4 class="flex items-center justify-center">                               
+                    <i>RULES AND REGULATION</i>
+                  </h4>
+                </div>
+
+                <div class="px-4 py-4 sm:px-5">
+                    <p>
+                      PEMBERITAHUAN PENTING
+                      <br>
+                      <i>IMPORTANT NOTICE</i>
+                    </p>
+                    <br>
+                    <p>
+                    Peserta wajib membaca Pemberitahuan Penting, Syarat dan Ketentuan serta Peraturan Lomba secara seksama sebelum mengikuti lomba. Peserta wajib memeriksa kesehatannya pada dokter jika mereka meragukan kondisi kesehatannya sebelum mengikuti lomba. Syarat dan Ketentuan serta Peraturan Lomba adalah dibuat untuk menciptakan dan mengarahkan lomba dalam skala yang besar, memastikan keselamatan seluruh peserta dan pemegang kepentingan.
+                    <br>
+                    <i>The Participants must read the Important Notice, Terms and Conditions and Race Rules carefully before participating in the competition. Participants must check their health with a doctor if they doubt their health condition before participating in the competition. Terms and Conditions and Race Rules are made to create and direct the race on a large scale, ensuring the safety of all participants and stakeholders</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    SYARAT DAN KETENTUAN
+                    <br>
+                    <i>TERMS AND CONDITIONS</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    1. Peserta WAJIB berusia 17 tahun sampai 58 tahun (memiliki KTP) untuk kategori 21 KM, 10 KM, dan 5 KM, serta WAJIB berusia 4 tahun sampai 10 tahun untuk kategori Kid Dash, di hari acara Kemala Run 2024. Penyelenggara berhak melakukan verifikasi atas usia peserta sebelum, pada saat dan sesudah lomba. Pengecualian atas hal ini hanya dapat dilakukan berdasarkan persetujuan Penyelenggara.
+                    <br>
+                    <i>Participants MUST be 17 to 58 years old (have an Identity Card) for the 21 KM, 10 KM and 5 KM categories, and for the Kid Dash category MUST be aged 4 to 10 years old on the day of the Kemala Run 2024 event. The organizer has the right to verify the age of participants  before, during and after the race.  Exceptions to this can only be made based on the Organizer's approval.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    2.	Kategori yang dilombakan di Kemala Run 2024;
+                    <br>
+                    Open dan Closed; jarak 21 KM, 10 KM, 5 KM, yang akan dimenangkan oleh masing-masing 7 orang juara untuk setiap kategori dan jenis kelamin.
+                    <br>
+                    Bhayangkari; jarak 21 KM, 10 KM, 5 KM, yang akan dimenangkan oleh masing-masing 7 orang juara untuk setiap kategori usia (20-30), (31-40), (41-50), (>51) dan jenis kelamin.
+                    <br>
+                    Kid Dash; jarak 100 meter (usia 4-5), jarak 200 meter (usia 6-8), jarak 400 meter (usia 9-10), yang akan dimenangkan oleh masing-masing 7 orang juara untuk setiap kategori dan jenis kelamin.
+                    <br>
+                    <br>
+                    <i>
+                    Categories contested in Kemala Run 2024;
+                    <br>
+                      The contested categories are 5 Km and 10 Km. Each winner will be taken three numbers for each category in each gender.
+                      <br>
+                      Open and Closed;  21 KM, 10 KM, 5 KM, where each winner will be drawn 7 numbers for each category and gender.
+                      <br>
+                      Bhayangkari;  21 KM, 10 KM, 5 KM, where each winner will be drawn 7 numbers for each age category (20-30), (31-40), (41-50), (51-58) and gender.
+                      <br>
+                      Kid Dash;  Distance of 100 meters (ages 4-5), distance 200 meters (ages 6-8), distance 400 meters (ages 9-10), each champion will also take 7 numbers for each age and gender category.
+                      <br>
+                    </i>
+                    </p> 
+                    <br>
+
+                    <p>
+                    3. Seluruh kategori (kecuali Kids Dash) yang dilombakan terbuka untuk pelari WNI maupun WNA. Pelari yang tercepat dan sesuai dengan peraturan yang telah ditentukan maka berhak menjadi juara.
+                    <br>
+                    <i>All categories (excluding Kids Dash) that are contested for Indonesian and International citizen runners. The fastest runner and according to the predetermined rules are entitled to the champion.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    4. Selama acara Kemala Run 2024 berlangsung, seluruh peserta terdaftar DILARANG menggunakan atribut partai politik apapun, melakukan orasi atau kegiatan kampanye apapun, melakukan gestur atau gerakan identik dari partai politik manapun saat berfoto, serta membuat narasi di sosial media berbau politik dengan materi tentang dan berkaitan dengan acara ini, baik sebelum, saat berlangsungnya acara maupun setelah acara berakhir.
+                    <br>
+                    <i>During the Kemala Run 2024 event, all registered participants are PROHIBITED from using any political party attributes, carrying out any speeches or campaign activities, making identical gestures or movements from any political party when taking photos, as well as creating political narratives on social media with material about and in conjunction with this event, before the event, during the event or after the event ends.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    5. Penyelenggara berhak menutup pendaftaran jika seluruh kuota pesertanya telah terisi penuh.
+                    <br>
+                    <i>The organizer has the right to close registration if all participant quotas have been filled.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    6. Pendaftaran akan diproses setelah pembayaran berhasil dilakukan.
+                    <br>
+                    <i>Registration will be processed after the registration payment is done.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    7. Penyelenggara berhak untuk membatasi dan menolak pendaftaran tanpa alasan.
+                    <br>
+                    <i>The organizer has the right to limit and refuse registration without reason.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    8. Penyelenggara berhak menghubungi dan mewawancarai peserta melalui telepon atau dengan cara lain untuk mendapatkan data yang diperlukan sehubungan dengan pendaftaran peserta.
+                    <br>
+                    <i>The Organizer has the right to contact and interview participants by telephone or other means to obtain the necessary data in connection with their registration.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    9.	Biaya pendaftaran tidak dapat dikembalikan (non-refundable) atas alasan apapun.
+                    <br>
+                    <i>Registration fees are non-refundable under certain conditions.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    10.	Jika lomba dibatalkan karena alasan di luar kuasa Penyelenggara (termasuk hujan deras, petir, bencana alam, demonstrasi, ataupun kejadian luar biasa tak terduga lainnya yang menghalangi jalannya lomba), Penyelenggara tidak akan mengembalikan biaya pendaftaran yang telah diterima dan Penyelenggara tidak bertanggung jawab atau kewajiban apapun atas hal tersebut.
+                    <br>
+                    <i>If the competition is canceled for reasons beyond the organizer's control (including heavy rain, lightning, natural disasters, demonstrations, or other unexpected extraordinary events that prevent the competition from proceeding), the organizer will not refund registration fees that have been received and the organizer is not responsible or liable for this matter.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    11.	Olahraga lari bukanlah olahraga yang tidak memiliki risiko dan karenanya masing-masing peserta wajib memastikan kondisi kesehatan fisiknya sebelum dan pada saat berpartisipasi dalam lomba. Tiap peserta bertanggung jawab atas kondisi kesehatannya masing-masing. Penyelenggara tidak bertanggung jawab atas cedera ataupun kematian yang timbul sebelum, selama atau sesudah lomba yang diakibatkan secara langsung dari kelalaian peserta.
+                    <br>
+                    <i>The organizer has the right not to allow or disqualify participants who are known or suspected to be unfit to take part in the competition. If a participant is injured during a race, under certain circumstances according to the recommendation of a health officer appointed by the organizer to supervise the race, the participant may be treated at a hospital designated by the organizer with treatment costs not exceeding the amount agreed upon by the organizer and the hospital.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    12.	Penyelenggara berhak untuk tidak mengizinkan atau mendiskualifikasi peserta yang diketahui atau diduga tidak dalam keadaan sehat untuk mengikuti lomba. Jika ada peserta yang cidera pada saat lomba, dalam keadaan tertentu sesuai dengan rekomendasi petugas kesehatan yang ditunjuk Penyelenggara untuk mengawasi lomba, peserta tersebut dapat dirawat di rumah sakit rujukan dengan biaya perawatan tidak melebihi jumlah yang disepakati oleh Penyelenggara dan rumah sakit tersebut.
+                    <br>
+                    <i>The organizer has the right not to allow or disqualify participants who are known or suspected to be unfit to take part in the competition. If a participant is injured during a race, under certain circumstances according to the recommendation of a health officer appointed by the Organizer to supervise the race, the participant may be treated at a hospital designated by the Organizer with treatment costs not exceeding the amount agreed upon by the Organizer and the hospital.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    13.	Penyelenggara berhak untuk mendiskualifikasi peserta dan/atau membatalkan hasil lomba sebagai akibat dari adanya pelanggaran atau tidak dipenuhinya ketentuan. Penyelenggara tidak wajib mengembalikan biaya pendaftaran dalam hal tersebut. Panitia atau Penyelenggara tidak berkewajiban untuk memberikan kompensasi apapun kepada peserta yang terbukti melakukan kesalahan dalam mengikuti lomba sehingga terkena diskualifikasi.
+                    <br>
+                    <i>The organizer has the right to disqualify participants and/or cancel the competition results as a result of violations or non-fulfillment of the provisions.  The organizer is not obliged to refund the registration fee in such case.  The committee or organizers are not obliged to provide any compensation to participants who apparently have made a mistake in conducting the competition resulting in disqualification.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    14.	Setiap bentuk keberatan atas hasil perlombaan agar langsung diajukan pada Penyelenggara di saat acara berlangsung paling lambat 15 menit setelah pemenang diumumkan oleh Penyelenggara dengan ketentuan tertentu.
+                    <br>
+                    <i>Any form of dispute over the results of the competition can go directly to the organizer during the event no later than 15 minutes after the winner was announced by the organizer with certain conditions.</i>
+                    </p>
+                    <br>
+                    
+                    <p>
+                    15.	Peserta dan Penyelenggara selalu menerapkan protokol kesehatan 5M (memakai masker, mencuci tangan pakai sabun, menjaga jarak, menghindari kerumunan, membatasi mobilitas) selama acara berlangsung.
+                    <br>
+                    <i>Participants and organizers always maintain 5M health protocols (wear a mask, wash your hands with soap, keep your distance, avoid crowds, limit mobility) during the event.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    16.	Penyelenggara mewajibkan wanita hamil untuk melaporkan kondisi kehamilannya dan menyerahkan surat dokter serta menandatangani surat pernyataan sebelum berpartisipasi dalam perlombaan atau selambat-lambatnya satu minggu sebelum perlombaan melalui email ke info@isport.co.id. Penyelenggara tidak bertanggung jawab atas risiko kesehatan kehamilan peserta bersangkutan yang timbul akibat mengikuti lomba.
+                    <br>
+                    <i>The organizer requires pregnant women to report the condition of their pregnancy and submit a doctor's letter and sign a statement before participating in the race or no later than one week before the competition via email to info@isport.co.id. The organizer is not responsible for the risk of pregnancy health of the participant concerned that arises as a result of the race.</i>
+                    </p>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <p>
+                      PENGAWASAN RUTE LOMBA
+                    <br>
+                    <i>SUPERVISION OF RACE ROUTES</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    1. Setiap peserta yang tidak mematuhi arahan, perintah, atau instruksi dari petugas lomba, petugas keamanan atau marshal (secara bersama-sama “Petugas”), atau peserta yang melakukan tindakan tidak sportif, atau tersinggung oleh tindakan atau ucapan dari Petugas, peserta atau penonton tersebut dapat didiskualifikasi dari lomba oleh Petugas.
+                    <br>
+                    <i>Any participant who does not comply with directions, orders or instructions from a race official, security officer or marshal (collectively "Officer"), or participant who commits an unsportsmanlike act, or is offended by the actions or words of an Officer, competitor or Spectators may be disqualified from the race by the Officer.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    2. Setiap peserta yang diketahui memperpendek jalur lomba (“memotong jalan”) oleh Petugas atau alat pengawas akan didiskualifikasi dari lomba.
+                    <br>
+                    <i>Any participant found by the Officer or control equipment to have an unfair advantage by shortening the race route (“cutting the line”) will be disqualified from the race.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    3.	Setiap peserta yang mengikuti lomba tanpa menggunakan nomor lomba (BIB) atau chip waktu resmi yang diberikan dapat diberhentikan dan didiskualifikasi dari lomba. Peserta wajib memasang nomor lomba (BIB) pada bagian depan baju larinya.
+                    <br>
+                    <i>Any participant who enters the race without using the official BIB number or time chip assigned to him may be terminated and disqualified from the race. Participants must put their BIB number on the front of their running jersey.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    4. Tidak ada pihak yang dibolehkan berada pada rute lomba kecuali mereka yang telah terdaftar atau disetujui oleh Penyelenggara. Dengan demikian, tidak ada pihak yang diperbolehkan untuk menemani peserta jika ia tidak terdaftar pada lomba atau tidak mendapatkan izin dari Penyelenggara.
+                    <br>
+                    <i>No party can be on the race route except those who have been registered or approved by the Organizer. Thus, no party is allowed to accompany the participant if he is not registered for the race or does not get permission from the organizer.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    5. Bantuan medis oleh petugas medis resmi lomba tidak dianggap sebagai bantuan yang akan mengakibatkan peserta didiskualifikasi dari lomba. Jika peserta berada dalam kondisi tidak sehat pada saat atau sesudah lomba dan/atau menerima perhatian medis dari petugas medis resmi lomba, maka peserta tersebut wajib memberikan informasi kesehatan secara rinci kepada Penyelenggara atau pihak yang diberi wewenang oleh Penyelenggara.
+                    <br>
+                    <i>Medical assistance by the race's official medical officer is not considered as assistance which will result in the participant being disqualified from the race. If a participant is in an unwell condition during or after the race and/or receives medical attention from an official race medical officer, the participant is required to provide detailed health information to the Organizer or a party authorized by the organizer.</i>
+                    </p>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <p>
+                    CHIP PENCATAT WAKTU DAN NOMOR DADA
+                    <br>
+                    <i>TIMECORD CHIP AND BIB NUMBER</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    1. Seluruh peserta akan menerima alat chip pencatat waktu. Peserta wajib untuk mengenakan alat chip pencatat waktu sesuai dengan petunjuk yang ditetapkan oleh Penyelenggara.
+                    <br>
+                    <i>All participants will receive a timekeeping chip. Participants are required to wear chip timing devices in accordance with the instructions set by the Organizer.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    2. Catatan waktu peserta yang dipakai untuk penentuan juara ditentukan oleh alat chip pencatat waktu (waktu bersih) sejak peserta melewati garis start sampai peserta melewati garis finish dan atau hasil pencatatan Penyelenggara.
+                    <br>
+                    <i>The participant's record of time used for determining the winner is determined by the time recording chip device (clean time) from the time the participant crosses the starting line until the participant crosses the finish line and or the results of the organizer's record.</i>
+                    </p>
+                    <br>
+                
+                    <p>
+                    3. Peserta diwajibkan selalu memakai chip pencatat waktu sebelum melewati garis start sampai melewati garis finish.
+                    <br>
+                    <i>Participants are required to always use a timekeeping chip before crossing the start line to the finish line.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    4. Peserta yang catatan waktunya melampaui waktu potong yang ditetapkan (cut-off time) tidak akan diakui sebagai catatan waktu resmi.
+                    <br>
+                    <i>Participants whose time records exceed the cut-off time will not be recognized as official time records.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    5. Peserta yang menggunakan lebih dari satu chip pencatat waktu akan didiskualifikasi dan catatan waktunya tidak akan direkam.5.	Peserta yang menggunakan lebih dari satu chip pencatat waktu akan didiskualifikasi dan catatan waktunya tidak akan direkam.
+                    <br>
+                    <i>Participants who use more than one timekeeping chip will be disqualified and their times will not be recorded.</i>
+                    </p>
+                    <br>
+                    
+                    <p>
+                    6. Peserta yang kehilangan chip pencatat waktunya akan didiskualifikasi.
+                    <i>Participants who lose their timekeeping chip will be disqualified.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    7. Peserta wajib memulai lomba sesudah waktu start yang ditentukan.
+                    <br>
+                    <i>Participants must start the race after the specified start time.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    8. Peserta wajib mengenakan nomor lomba (BIB) yang diletakan di bagian depan tubuh.
+                    <br>
+                    <i>Participants must wear a bib number on the chest.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    9.	Dalam hal tertentu, karena kesalahan teknis, chip pencatat tidak dapat dideteksi dan dengan demikian peserta tidak memiliki catatan waktu; yang berlaku juga bagi peserta dengan status pemenang potensial; maka status mereka juga akan gugur secara otomatis.
+                    <br>
+                    <i>In certain cases, due to technical errors, the recording chip cannot be detected and thus the participant has no time record; this also applies to participants with potential winner status; so their status will also be lost automatically.</i>
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <p>
+                    FASILITAS PENITIPAN TAS
+                    <br>
+                    <i>BAG STORAGE FACILITIES</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    1. Penyelenggara akan menyediakan fasilitas penitipan tas (deposit bag) untuk menyimpan baju ganti. Peserta dilarang menitipkan barang-barang berharga.
+                    <br>
+                    <i>The organizer will provide deposit bag facilities for storing a change of clothes. Participants are prohibited from depositing valuables.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    2. Penyelenggara tidak bertanggung jawab atas kehilangan barang-barang berharga di tempat penitipan.
+                    <br>
+                    <i>The organizer is not responsible for the loss of valuables at the safe deposit box.</i>
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <p>
+                    FOTO DAN DOKUMENTASI
+                    <br>
+                    <i>PHOTOS AND DOCUMENTATION</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    1.	Penyelenggara berhak untuk menggunakan foto dan dokumentasi peserta yang diambil saat mengikuti lomba untuk keperluan yang berhubungan dengan event <?= $event['nama_event'] ?> atau event serupa di masa yang akan datang.
+                    <br>
+                    <i>The Organizer has the right to use photos and documentation of participants taken while participating in the race for purposes related to the <?= $event['nama_event'] ?> event or similar events in the future.</i>
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <p>
+                    PERUBAHAN /KEBERATAN /PENGAKUAN
+                    <br>
+                    <i>AMENDMENT / OBJECTION / ACKNOWLEDGMENT</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    1. Penyelenggara berhak untuk memodifikasi, menambah atau mengesampingkan ketentuan lomba.
+                    <br>
+                    <i>The organizer has the right to modify, add or override the race conditions.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    2. Peserta akan terikat atas segala modifikasi dan tambahan ketentuan yang ditetapkan penyelenggara.
+                    <br>
+                    <i>Participants will be bound by all modifications and additional provisions determined by the organizer.</i>
+                    </p>
+                    <br>
+
+                    <p>
+                    3. Kegagalan dalam memenuhi ketentuan, beserta perubahannya, dapat mengakibatkan diskualifikasi dan pencabutan hadiah dan catatan waktu.
+                    <br>
+                    <i>Failure to comply with the conditions, and changes thereto, may result in disqualification and revocation of prizes and time records.</i>
+                    </p>
+                    <br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ Modal -->
+<div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="faqModalLabel">FAQ</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- FAQ Content Goes Here -->
+                <h4 class="flex items-center justify-center">
+                    FAQ KEMALA RUN 2024
+                    <br>
+                  </h4>
+                <p>
+                    <h5>Apa itu Kemala Run 2024?</h5>
+                    <p> Kemala Run 2024 adalah lomba lari yang diselenggarakan oleh Bhayangkari
+                    dan Yayasan Kemala Bhayangkari dalam satu wadah penyelenggaraan Tour of
+                    Kemala. Kategori yang dilombakan adalah 21KM, 10KM, 5KM dan Kids Dash.
+                    Terdapat juga kategori Disabilitas yang sifatnya tidak dilombakan. Kemala Run
+                    ini diselenggarakan dengan maksud untuk menggalakkan olahraga khususnya
+                    lari di kalangan Bhayangkari, Polri dan masyarakat umum. Selain itu juga
+                    bertujuan untuk mempersatukan berbagai unsur di masyarakat dalam satu acara
+                    perlombaan lari.</p>
+                    <br/>
+
+                    <h5>Kapan acara Kemala Run 2024 akan diselenggarakan?</h5>
+                    <p> Kemala Run 2024 akan diselenggarakan hari Minggu, 09 Juni 2024, pukul 05:00
+                    sampai dengan selesai.</p>
+                    <br/>
+
+                    <h5>Dimanakah Kemala Run 2024 akan diselenggarakan?</h5>
+                    <p> Kemala Run 2024 akan diselenggarakan di Ice BSD</p>
+                    <br/>
+
+                    <h5>Berapa jarak lomba dan jam start masing-masing jarak lari?</h5>
+                    <p>Jarak lomba di event ini adalah 21KM, 10KM, 5KM, Kids Dash dan Difable
+                    <ul>
+                        <li>Start untuk kategori 21KM : 05.00 WIB</li>
+                        <li>Start untuk kategori 10KM : 06.00 WIB</li>
+                        <li>Start untuk kategori 5KM : 06.15 WIB</li>
+                        <li>Start untuk kategori Difable : 06.20 WIB</li>
+                        <li>Start untuk kategori Kids Dash : 07.00 WIB</li>
+                    </ul>
+                    </p>
+                    <br/>
+
+                    <h5>Di mana titik Start & Finish?
+                    Titik Start & Finish berada di Ice BSD.</h5>
+                    <p>Apakah acara Kemala Run 2024 ini berbayar ?
+                        Iya, acara Kemala Run 2024 ini berbayar.</p>
+                        <ul>
+                            <h6>Untuk kategori 21KM;</h6>
+                            <li>Open Rp. 750.000 (Early Bird Rp. 600.000)</li>
+                            <li>Closed Rp. 600.000 (Early Bird Rp. 480.000)</li>
+                        </ul>
+
+                        <ul>
+                            <h6>Untuk Kategori 10KM;</h6>
+                            <li>Open Rp. 600.000 (Early Bird Rp. 480.000)</li>
+                            <li>Closed Rp. 500.000 (Early Bird Rp. 400.000)</li>
+                        </ul>
+
+                        <ul>
+                            <h6>Untuk kategori 5KM;</h6>
+                            <li>Closed Rp. 250.000 (Early Bird Rp. 200.000)</li>
+                            <li>Closed Rp. 600.000 (Early Bird Rp. 480.000)</li>
+                        </ul>
+                    
+                        <ul>
+                            <h6>Untuk kategori Kids Dash;</h6>
+                            <li>Closed Rp. 150.000 (Early Bird Rp. 120.000)</li>
+                        </ul>
+                     <br/>
+
+                    <h5> Bagaimana cara mendaftar acara Kemala Run 2024 ?</h5>
+                    <p>Anda dapat melakukan registrasi melalui link http://www.kemalarun.com/</p>
+                    <br/>
+
+                    <h5>Bagaimana saya dapat melakukan pembayaran pendaftaran saya?</h5>
+                    <p>
+                    Anda bisa melakukan pembayaran menggunakan metode transfer bank
+                    melalui virtual account atau bisa melalui merchant Alfamart dan Indomaret.
+                    </p>
+                    <br/>
+                    
+                    <h5>Bagaimana saya mengetahui bahwa saya sudah terdaftar dalam Kemala Run
+                    2024?</h5>
+                    <p>Jika proses pembayaran Anda telah sukses, maka otomatis akan menerima
+                    email konfirmasi yang dikirimkan ke email yang telah terdaftar. Anda juga dapat
+                    melihat daftar peserta lomba pada microsite yang telah disiapkan.</p>
+                    <br/>
+
+                    <h5>Jika saya sudah terdaftar di Kemala Run 2023, apakah saya bisa membatalkan
+                    <p>pendaftaran saya dan mengembalikan uang pendaftaran?</h5>
+                    Untuk peserta yang sudah terdaftar dan melakukan pembayaran, pendaftaran
+                    anda tidak bisa dicancel atau tidak ada pengembalian dana (refund).
+                    </p>
+                    <br/>
+
+                    <h5>Apabila saya telah melakukan pendaftaran, bisakah orang lain menggantikan posisi
+                    saya?</h5>
+                    <p>
+                    Tidak bisa, peserta yang sudah teregistrasi pendaftaran maka tidak bisa
+                    dipindahtangankan ke pihak lain.
+                    </p>
+                    <br/>
+
+                    <h5>Bisakah saya mengubah data pendaftaran?</h5>
+                    <p>Tidak bisa, data yang sudah masuk ke sistem kami tidak bisa diubah kembali</p>
+                    <br/>
+
+                    <h5>Saya tidak mendapatkan email konfirmasi pendaftaran. Apa solusinya?</h5>
+                    <p>Silakan menghubungi email di info@isport.co.id atau WA 0821-1337-7303
+                    (WA Only)</p>
+                    <br/>
+
+                    <h5>Saya memiliki masalah saat melakukan pendaftaran dan pembayaran. Apa
+                    solusinya?</h5>
+                    <p>Silakan menghubungi email di info@isport.co.id atau WA 0821-1337-7303
+                    (WA Only)</p>
+                    <br/>
+
+                    <h5>Kapan, dimana dan jam berapa jadwal pengambilan racepack Kemala Run 2024?</h5>
+                    <p>Jadwal pengambilan racepack:</p>
+                    <ul>Waktu : Tgl. 6-8 Juni 2024
+                        <li>Lokasi : Auditorium Mutiara STIK-PTIK, Jl. Tirtayasa Raya No.6, RT.9/RW.4,</li>
+                        <li>Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta</li>
+                    </ul>
+                    <br/>
+
+                    <h5>Apa saja yang diperoleh peserta saat pengambilan racepack Kemala Run 2024?</h5>
+                    <p>Peserta akan mendapatkan BIB Number, Jersey Running, dan Tote Bag.</p>
+                    <br/>
+
+                    <h5>Apa saja syarat yang diperlukan jika pengambilan racepack diwakilkan?
+                    Syarat yang harus dibawa jika racepack diwakilkan adalah</h5>
+                    <ul style="list-style: circle; list-style-position: inside;">
+                        <li>Email konfirmasi.</li>
+                        <li>Fotocopy kartu identitas yang digunakan saat registrasi.</li>
+                        <li>Surat kuasa yang bisa diunduh di http://www.kemalarun.com</li>
+                        <li>Kartu identitas yang mewakili, baik dalam bentuk cetak maupun digital.</li>
+                        <li>Apa syarat untuk mengikuti acara ini?</li>
+                        <li>Peserta minimal berusia 17 tahun untuk kategori 21KM, 10KM dan 5KM.</li>
+                        <li>Peserta wajib menggunakan Nomor Peserta/Lomba yang telah diberikan
+                            Panitia.</li>
+                        <li>Peserta wajib menggunakan sepatu lari selama acara.</li>
+                        <li>Peserta harus melakukan start tepat waktu dengan batas waktu pelepasan
+                            start di setiap kategori lomba yang sudah ditentukan oleh pihak
+                            Penyelenggara Lomba.</li>
+                    </ul>
+                    <br/>
+
+                    <h5>Apakah perserta Kemala Run 2024 boleh menggunakan atribut politik?</h5>
+                    <p>
+                    Selama acara Kemala Run 2024 berlangsung, seluruh peserta terdaftar DILARANG
+                    menggunakan atribut partai apapun, melalukan orasi atau kegiatan kampanye apapun,
+                    melakukan gestur atau gerakan identik dari partai manapun saat berfoto, serta
+                    membuat narasi di sosial media berbau politik dengan materi tentang acara ini, baik
+                    sebelum, saat berlangsungnya acara maupun setelah acara berakhir.
+                    </p>
+                    <br/>
+
+                    <h5>Apakah ada sarana evakuasi sepanjang jalur lomba?</h5>
+                    <p>Iya, kami menempatkan sarana ambulance di beberapa titik di sepanjang jalur
+                    lomba yang akan siap mengantarkan peserta lomba pada saat mengalami cidera
+                    untuk diantarkan menuju rumah sakit rujukan acara lomba atau menuju tenda
+                    pusat medis di lokasi tempat berkumpul acara (Race Village).
+                    </p>
+                    <br/>
+
+                    <h5>Siapa penyelenggara Kemala Run 2024?</h5>
+                    <p>Kemala Run 2024 diselenggarakan oleh Bhayangkari dan Yayasan Kemala
+                    Bhayangkari.</p>
+                    <br/>
+
+                    <h5>Saya punya pertanyaan, bagaimana saya dapat bertanya ?</h5>
+                    <p>Silakan menghubungi email di info@isport.co.id, WA 0821-1337-7303 (WA
+                    Only), dan Instagram resmi Kemala Run 2024 di @tourofkemala.
+                    </p>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        
+
+        <!-- Start Hero -->
+        <section class="py-20 pt-28 w-full bg-[url('../../assets/images/bg/bgfixing.png')] bg-no-repeat bg-center bg-cover relative personal-wrapper overflow-hidden bg-amber-500/5" id="home" >
+            <div class="absolute inset-0" id="overlay"></div>
+            <div class="container" style="height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <h4 class="font-bold lg:text-[40px] text-3xl lg:leading-normal leading-normal mb-4 text-center"></h4>
+
+                <div class="mt-3 absolute text-center">
+                    <!-- <p class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded">Coming Soon</p> -->
+                    <!-- <a href="javascript:void(0)" class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md">Register</a> -->
+                    <!-- <a href="" class="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md ms-1">Download CV</a> -->
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+
+        <div class="relative">
+            <div class="absolute block w-full h-auto bottom-[25px] z-1 left-0">
+                <a href="#about"><i class="mdi mdi-arrow-down absolute top-0 left-0 right-0 text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 h-12 w-12 mx-auto shadow-md dark:shadow-gray-800"></i></a>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start -->
+<section class="relative md:py-24 py-16" id="about">
+    <div class="container">
+        <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+            <div class="lg:col-span-5 lg:px-8">
+                <div class="relative">
+                    <div class="absolute inset-0 dark:border-gray-800 rounded-full -mt-[10px] -ms-3 h-[100%] w-[100%] -z-1"></div>
+                    <img src="assets/images/KM2024.png" class="shadow-gray-200 dark:shadow-gray-800" alt="">
+                </div>
+            </div><!--end col-->
+
+            <div class="lg:col-span-7">
+                <div class="lg:ms-5">
+                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Kemala Run 2024</h3>
+
+                    <p class="text-slate-400 max-w-xl text-[15px]">Kemala Run 2024 adalah lomba lari yang diselenggarakan oleh Bhayangkari dan Yayasan Kemala Bhayangkari dalam satu wadah penyelenggaraan Tour of Kemala. Kategori yang dilombakan adalah 21KM, 10KM, 5KM dan Kids Dash. Terdapat juga kategori Disabilitas yang sifatnya tidak dilombakan.</p>
+                    <p class="text-slate-400 max-w-xl text-[15px] mt-6">Kemala Run ini diselenggarakan dengan maksud untuk menggalakkan olahraga khususnya lari di kalangan Bhayangkari, Polri dan masyarakat umum. Selain itu juga bertujuan untuk mempersatukan berbagai unsur di masyarakat dalam satu acara perlombaan lari.</p>
+
+                    <a href="#" class="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2" data-toggle="modal" data-target="#registrationModal">REGISTRATION IS COMING SOON</a>
+
+                    </div>
+                </div>
+            </div><!--end grid-->
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registrationModalLabel">User Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Registration form -->
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        
+        <!-- Start -->
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+            <div class="container">
+            
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Benefit</h3>
+                </div><!--end grid-->
+
+                <!-- card jersey -->
+                <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/images/benefit/jerseyAll.png" alt="jersey_all">
+                    </div>
+
+                      <div class="content mt-7" style="text-align: center;">
+                          <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Running Jersey</a>
+                          <p class="text-slate-400 mt-3 text-[15px]">Peserta akan menerima jersey lari eksklusif dari Kemala Run yang nyaman dipakai
+                            selama acara.
+                          </p>
+                      </div>
+                  </div>
+                
+                <!-- card bibnumber & medal -->
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px] place-items-center">
+                    <!-- Content -->
+                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+                      <!-- Change bibnumber Image -->
+                        <img src="assets/images/benefit/bib_number.png" alt="medal_logo">
+
+                        <div class="content mt-7">
+                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">BIB Number</a>
+                            <p class="text-slate-400 mt-3 text-[15px]">Setiap peserta akan mendapatkan nomor BIB yang akan digunakan selama perlombaan
+                                untuk identifikasi dan pencatatan waktu.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <!-- <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900"> -->
+                          <!-- Change jersey Image -->
+                        <!-- <img src="assets/images/benefit/jersey.png" alt="Medal Logo">
+
+                        <div class="content mt-5">
+                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">
+                                Running Jersey
+                                </a>
+                            <p class="text-slate-400 mt-3 text-[15px]">Peserta akan menerima jersey lari eksklusif dari Kemala Run yang nyaman dipakai
+                                selama acara.</p>
+                        </div>
+                    </div> -->
+                    <!-- Content -->
+
+                    <!-- Content -->
+                    <div class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+                        <!-- Change Medal Image -->
+                        <img src="assets/images/benefit/medals.png" alt="Medal Logo">
+
+                        <div class="content mt-7">
+                            <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Finisher Medal</a>
+                            <p class="text-slate-400 mt-3 text-[15px]">Setiap peserta yang berhasil menyelesaikan lomba akan mendapatkan medali
+                                finisher sebagai penghargaan.</p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start -->
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+            <div class="container">
+            
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Hadiah</h3>
+                </div><!--end grid-->
+                <div class="text-center"><p>Lihat hadiah 
+                    <a class="cursor-pointer text-amber-400" data-toggle="modal" data-target="#hadiahModal">di sini</a>
+                </p>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- FAQ Modal -->
+<div class="modal fade" id="hadiahModal" tabindex="-1" aria-labelledby="hadiahModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="hadiahModalLabel">Hadiah Lomba</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body overflow-auto">
+                <!-- Table Podium Winner Kemala Run Close -->
+                <table class="table table-bordered">
+                    <thead>
+                        <h5 class="text-center">PODIUM WINNER KEMALA RUN </h5>
+                        <h5 class="text-center text-amber-400">OPEN</h5>
+                        <tr class="table-borderless">
+                            <th></th>
+                            <th class="bg-amber-500 text-white">HALF MARATHON</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">10K</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">5K</th>
+                            <th class="bg-amber-500"></th>
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Insert Excel data rows here -->
+                        <tr class="table-bordered">
+                            <td></td>
+                            <td >Male</td>
+                            <td>Female</td>
+                            <td></td>
+                            <td>Male</td>
+                            <td>Female</td>
+                            <td></td>
+                            <td>Male</td>
+                            <td>Female</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr class="table-bordered">
+                            <td>1</td>
+                            <td>Rp. 30.000.000</td>
+                            <td>Rp. 30.000.000</td>
+                            <td></td>
+                            <td>Rp. 20.000.000</td>
+                            <td>Rp. 20.000.000</td>
+                            <td></td>
+                            <td>Rp. 15.000.000</td>
+                            <td>Rp. 15.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rp. 25.000.000</td>
+                            <td>Rp. 25.000.000</td>
+                            <td></td>
+                            <td>Rp. 17.000.000</td>
+                            <td>Rp. 17.000.000</td>
+                            <td></td>
+                            <td>Rp. 12.500.000</td>
+                            <td>Rp. 12.500.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rp. 20.000.000</td>
+                            <td>Rp. 20.000.000</td>
+                            <td></td>
+                            <td>Rp. 14.000.000</td>
+                            <td>Rp. 14.000.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rp. 15.000.000</td>
+                            <td>Rp. 15.000.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <td></td>
+                            <td>Rp. 4.000.000</td>
+                            <td>Rp. 4.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Rp. 5.000.000</td>
+                            <td>Rp. 5.000.000</td>
+                            <td></td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <td></td>
+                            <td>Rp. 1.000.000</td>
+                            <td>Rp. 1.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                    </tbody>
+                </table>    
+                <br>
+                <br>
+                <!-- Table Podium Winner Kemala Run Close -->
+                <table class="table table-bordered">
+                    <thead>
+                        <h5 class="text-center">PODIUM WINNER KEMALA RUN </h5>
+                        <h5 class="text-center text-amber-400">CLOSE</h5>
+                        <tr class="table-borderless">
+                            <th></th>
+                            <th class="bg-amber-500 text-white">HALF MARATHON</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">HALF MARATHON MASTER 40+</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">10K</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">5K</th>
+                            <th class="bg-amber-500"></th>
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Insert Excel data rows here -->
+                        <tr class="table-bordered">
+                            <td></td>
+                            <td >Male</td>
+                            <td>Female</td>
+                            <td></td>
+                            <td>Male</td>
+                            <td>Female</td>
+                            <td></td>
+                            <td>Male</td>
+                            <td>Female</td>
+                            <td></td>
+                            <td>Male</td>
+                            <td>Female</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr class="table-bordered">
+                            <td>1</td>
+                            <td>Rp. 25.000.000</td>
+                            <td>Rp. 25.000.000</td>
+                            <td></td>
+                            <td>Rp. 25.000.000</td>
+                            <td>Rp. 25.000.000</td>
+                            <td></td>
+                            <td>Rp. 17.500.000</td>
+                            <td>Rp. 17.500.000</td>
+                            <td></td>
+                            <td>Rp. 15.000.000</td>
+                            <td>Rp. 15.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rp. 20.000.000</td>
+                            <td>Rp. 20.000.000</td>
+                            <td></td>
+                            <td>Rp. 20.000.000</td>
+                            <td>Rp. 20.000.000</td>
+                            <td></td>
+                            <td>Rp. 15.000.000</td>
+                            <td>Rp. 15.000.000</td>
+                            <td></td>
+                            <td>Rp. 12.500.000</td>
+                            <td>Rp. 12.500.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rp. 15.000.000</td>
+                            <td>Rp. 15.000.000</td>
+                            <td></td>
+                            <td>Rp. 15.000.000</td>
+                            <td>Rp. 15.000.000</td>
+                            <td></td>
+                            <td>Rp. 12.000.000</td>
+                            <td>Rp. 12.000.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 8.000.000</td>
+                            <td>Rp. 8.000.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <td></td>
+                            <td>Rp. 6.000.000</td>
+                            <td>Rp. 6.000.000</td>
+                            <td></td>
+                            <td>Rp. 4.000.000</td>
+                            <td>Rp. 4.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Rp. 5.000.000</td>
+                            <td>Rp. 5.000.000</td>
+                            <td></td>
+                            <td>Rp. 5.000.000</td>
+                            <td>Rp. 5.000.000</td>
+                            <td></td>
+                            <td>Rp. 4.000.000</td>
+                            <td>Rp. 4.000.000</td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <td></td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <td></td>
+                            <td>Rp. 1.000.000</td>
+                            <td>Rp. 1.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                    </tbody>
+                </table>    
+                <br>
+                <br>
+                <!-- BAYANGKARI -->
+                <table class="table table-bordered">
+                    <thead>
+                        <h5 class="text-center">BAYANGKARI </h5>
+                        <tr class="table-borderless">
+                            <th></th>
+                            <th class="bg-amber-500 text-white">HALF MARATHON</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">10K</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">5K</th>
+                            <th class="bg-amber-500"></th>
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Insert Excel data rows here -->
+                        <tr class="table-bordered">
+                            <td></td>
+                            <td >Umum</td>
+                            <td>Master 40+</td>
+                            <td></td>
+                            <td >Umum</td>
+                            <td>Master 40+</td>
+                            <td></td>
+                            <td >Umum</td>
+                            <td>Master 40+</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr class="table-bordered">
+                            <td>1</td>
+                            <td>Rp. 20.000.000</td>
+                            <td>Rp. 20.000.000</td>
+                            <td></td>
+                            <td>Rp. 12.500.000</td>
+                            <td>Rp. 12.500.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rp. 17.000.000</td>
+                            <td>Rp. 17.000.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rp. 14.000.000</td>
+                            <td>Rp. 14.000.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <td></td>
+                            <td>Rp. 6.000.000</td>
+                            <td>Rp. 6.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 5.000.000</td>
+                            <td>Rp. 5.000.000</td>
+                            <td></td>
+                            <td>Rp. 4.000.000</td>
+                            <td>Rp. 4.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <td></td>
+                            <td>Rp. 4.000.000</td>
+                            <td>Rp. 4.000.000</td>
+                            <td></td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <td></td>
+                            <td>Rp. 2.500.000</td>
+                            <td>Rp. 2.500.000</td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <td></td>
+                            <td>Rp. 1.500.000</td>
+                            <td>Rp. 1.500.000</td>
+                            <td></td>
+                            <td>Rp. 750.000</td>
+                            <td>Rp. 750.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                    </tbody>
+                </table>    
+                <br>
+                <br>
+                 <!-- POLWAN -->
+                 <table class="table table-bordered">
+                    <thead>
+                        <h5 class="text-center">POLWAN </h5>
+                        <tr class="table-borderless">
+                            <th></th>
+                            <th class="bg-amber-500 text-white">HALF MARATHON</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">10K</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">5K</th>
+                            <th class="bg-amber-500"></th>
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Insert Excel data rows here -->
+                        <tr class="table-bordered">
+                            <td></td>
+                            <td >Umum</td>
+                            <td>Master 40+</td>
+                            <td></td>
+                            <td >Umum</td>
+                            <td>Master 40+</td>
+                            <td></td>
+                            <td >Umum</td>
+                            <td>Master 40+</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr class="table-bordered">
+                            <td>1</td>
+                            <td>Rp. 20.000.000</td>
+                            <td>Rp. 20.000.000</td>
+                            <td></td>
+                            <td>Rp. 12.500.000</td>
+                            <td>Rp. 12.500.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rp. 17.000.000</td>
+                            <td>Rp. 17.000.000</td>
+                            <td></td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rp. 14.000.000</td>
+                            <td>Rp. 14.000.000</td>
+                            <td></td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <td></td>
+                            <td>Rp. 6.000.000</td>
+                            <td>Rp. 6.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rp. 10.000.000</td>
+                            <td>Rp. 10.000.000</td>
+                            <td></td>
+                            <td>Rp. 5.000.000</td>
+                            <td>Rp. 5.000.000</td>
+                            <td></td>
+                            <td>Rp. 4.000.000</td>
+                            <td>Rp. 4.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rp. 7.500.000</td>
+                            <td>Rp. 7.500.000</td>
+                            <td></td>
+                            <td>Rp. 4.000.000</td>
+                            <td>Rp. 4.000.000</td>
+                            <td></td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Rp. 3.000.000</td>
+                            <td>Rp. 3.000.000</td>
+                            <td></td>
+                            <td>Rp. 2.500.000</td>
+                            <td>Rp. 2.500.000</td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Rp. 2.000.000</td>
+                            <td>Rp. 2.000.000</td>
+                            <td></td>
+                            <td>Rp. 1.500.000</td>
+                            <td>Rp. 1.500.000</td>
+                            <td></td>
+                            <td>Rp. 750.000</td>
+                            <td>Rp. 750.000</td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                    </tbody>
+                </table>    
+                <br>
+                <br>
+                <!-- KIDS DASH -->
+                <table class="table table-bordered">
+                    <thead>
+                        <h5 class="text-center">KIDS DASH </h5>
+                        <tr class="table-borderless">
+                            <th></th>
+                            <th class="bg-amber-500 text-white">100 M - 4 s.d 5 </th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">200 M 6 s.d 8</th>
+                            <th class="bg-amber-500"></th>
+                            <th></th>
+                            <th class="bg-amber-500 text-white">300 M 9 s.d 10</th>
+                            <th class="bg-amber-500"></th>
+                            <!-- Add more columns as needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Insert Excel data rows here -->
+                        <tr class="table-bordered">
+                            <td>1</td>
+                            <td>Rp. 2.000.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 2.500.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 3.000.000</td>
+                            <td></td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rp. 1.750.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 2.500.000</td>
+                            <td></td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rp. 1.500.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 1.750.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 2.000.000</td>
+                            <td></td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rp. 900.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 1.000.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 1.500.000</td>
+                            <td></td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rp. 700.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 800.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 1.000.000</td>
+                            <td></td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Rp. 500.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 600.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 750.000</td>
+                            <td></td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Rp. 300.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 400.000</td>
+                            <td></td>
+                            <td></td>
+                            <td>Rp. 500.000</td>
+                            <td></td>
+                            <!-- Add more cells for additional data -->
+                        </tr>
+                    </tbody>
+                </table>   
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Start -->
+         <!-- <section class="relative md:py-24 py-16 dark:bg-slate-800">
+            <div class="container">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Size Chart</h3>
+                </div>
+                   
+                    <img src="assets/images/benefit/sizechart.jpg" class="mx-auto" alt="Sizechart">
+            </div>
+        </section> -->
+        <!-- End -->
+
+
+        <!-- Start -->
+        <section class="relative bg-gray-50 md:py-24 py-16" id="schedule">
+            <div class="container">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Jadwal Acara</h3>
+
+                </div><!--end grid-->
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px] mt-4">
+                    <div class="blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">                        
+                        <div class="content p-6">
+                            <p href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Race Pack Collection</p>
+                            <div class="flex mt-4 inline">
+                                <img src="assets/images/icon/date.png" class="h-8 w-8 justify-center px-3 mt-1 md:w-16 md:h-16">                                
+                                <p class="text-slate-400 text-[15px]">Kamis s.d Sabtu, Tanggal 6-8 Juni 2024</p>
+                            </div>
+                                            
+                            <div class="flex mt-4 flex-row">
+                                <a href="https://maps.app.goo.gl/CBHVLsPJKweCwZjx6" target="_blank" rel="noopener noreferrer" class="w-44 h-9 justify-center pl-3 mt-1">
+                                    <img src="assets/images/icon/location.png" class="w-8 h-8 md:w-16 md:h-16" alt="Location">
+                                </a>
+                                <p class="text-slate-400 text-[15px]">Auditorium Mutiara STIK-PTIK, Jl. Tirtayasa Raya No.6, RT.9/RW.4, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta</p> 
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                        <div class="content p-6">
+                            <p href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Race Day</p>
+                            <div class="flex mt-4 inline">
+                                <img src="assets/images/icon/date.png" class="h-8 w-8 justify-center px-3 mt-1 md:w-16 md:h-16">
+                                <p class="text-slate-400 text-[15px]">Minggu, 09 Juni 2024, pukul 05:00 WIB</p>
+                            </div>
+                
+                            <div class="flex mt-4 flex-row">
+                                <a href="https://maps.app.goo.gl/ZcPj7ewCz23CN7en6" target="_blank" rel="noopener noreferrer" class="h-9 justify-center px-3 mt-1">
+                                    <img src="assets/images/icon/location.png" class="w-8 h-8 md:w-16 md:h-16" alt="Location">
+                                </a>
+                                <p class="text-slate-400 pl-2 text-[15px]">Ice BSD</p> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <br>
+                    <div class="mt-2 blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                        <div class="content p-6">
+                            <p href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Waktu Start</p>
+                            <p class="text-slate-400 mt-3 text-[15px]">
+                                21KM: 05:00 WIB
+                                <br>
+                                10KM: 06:00 WIB
+                                <br>
+                                5KM: 06:15 WIB
+                                <br>
+                                Difable: 06:20 WIB
+                                <br>
+                                Kids Dash: 07:00 WIB
+                            </p>   
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px] mt-4">
+                        <div class="blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">                        
+                            <div class="content">
+                                <video
+                                id="my-player"
+                                class="video-js vjs-default-skin vjs-big-play-centered"
+                                controls
+                                preload="auto"
+                                poster="assets/images/bg/video.png"
+                                data-setup='{"fluid": true}'>            
+                                <source src="assets/video/run.mp4" type="video/mp4"></source>  
+                                <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that            
+                                </p>
+                            </video>
+                            </div>
+                        </div>
+                        <div class="blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">                        
+                            <div class="content">
+                                <video
+                                id="my-player"
+                                class="video-js vjs-default-skin vjs-big-play-centered"
+                                controls
+                                preload="auto"
+                                poster="assets/images/bg/video.png"
+                                data-setup='{"fluid": true}'>            
+                                <source src="assets/video/run.mp4" type="video/mp4"></source>  
+                                <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that            
+                                </p>
+                            </video>
+                            </div>
+                        </div>
+                    </div>
+<!--                     
+                    <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px] mt-4">
+                        <div class="content">
+                            <video
+                                id="my-player"
+                                class="video-js vjs-default-skin vjs-big-play-centered"
+                                controls
+                                preload="auto"
+                                poster="assets/images/bg/video.png"
+                                data-setup='{"fluid": true}'>            
+                                <source src="assets/video/run.mp4" type="video/mp4"></source>  
+                                <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that            
+                                </p>
+                            </video>
+                        </div>
+                    </div> -->
+                </div><!--end grid-->
+
+
+                
+
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+
+         <!-- Start -->
+         <section class="relative md:py-24 py-16 dark:bg-slate-800" id="route">
+            <div class="container">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Rute Lomba</h3>                    
+                </div><!--end grid-->
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px] mt-8">
+                    <div class="blog bg-white relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                        <!-- Change News Image -->
+                        <img src="assets/images/route/21K.png" alt="" class="myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png" data-nama="Rute HM">
+
+                        <div class="content p-6">
+                            <a href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Rute HM</a>                            
+                        </div>
+                    </div>
+
+                    <div class="blog relative bg-white rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                        <!-- Change News Image -->
+                        <img src="assets/images/route/21K.png" alt="" class="myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png" data-nama="Rute 10K">
+
+                        <div class="content p-6">
+                            <a href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Rute 10K</a>                            
+                        </div>
+                    </div>
+
+                    <div class="blog relative bg-white rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                        <!-- Change News Image -->
+                        <img src="assets/images/route/21K.png" alt="" class="myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png" data-nama="Rute 5K">
+
+                        <div class="content p-6">
+                            <a href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Rute 5K</a>                            
+                        </div>
+                    </div>
+                </div>
+                <!--end grid-->
+
+                <!-- modalnya -->
+                <div class="modal fade" id="myModal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h5 id="modalNama" style="color: #EC4899;"></h5>
+                          <img id="modalImg" src="" alt="Image">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #EC4899; border-color: #EC4899;">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div><!--end container-->
+        </section>
+        <!--end section-->
+        <!-- End -->
+
+        <!-- Footer Start -->
+        <footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">
+            <div class="py-[30px] px-0 border-t border-slate-800">
+                <div class="container text-center">
+                    <div class="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 items-center">
+                        <div class="lg:col-span-3 md:text-start text-center">
+                            <a href="#" class="text-[22px] focus:outline-none">
+                                <img src="assets/images/kemala.png" class="mx-auto md:me-auto md:ms-0 w-18" alt="">
+                            </a>
+                        </div>
+
+                        <div class="lg:col-span-5 text-center mt-6 md:mt-0">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Kemala Run</p>
+                        </div>
+
+                        <ul class="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
+                            <li class="inline"><a href="https://wa.me/6282113377303" target="_blank" class="btn btn-icon btn-sm text-white border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-whatsapp align-middle" title="whatsapp"></i></a></li>
+                            <li class="inline"><a href="mailto:info@isport.co.id" class="btn btn-icon btn-sm text-white border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-envelope align-middle" title="email"></i></a></li>
+                            <li class="inline"><a href="https://instagram.com/tourofkemala" target="_blank" class="btn btn-icon btn-sm text-white  border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-amber-500 text-white leading-9"><i class="uil uil-arrow-up"></i></a>
+        <!-- Back to top -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+
+        
+        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+
+        <!-- JAVASCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+        $(document).ready(function() {
+        // Initialize Bootstrap modals
+        $('#registrationModal').modal({
+            backdrop: 'static', // Prevent closing by clicking outside the modal
+            keyboard: false // Prevent closing by pressing ESC key
+            });
+        });
+
+        $(document).ready(function(){
+            $('.myImg').on('click', function(){
+                var imgSrc = $(this).data('img')
+                var nama = $(this).data('nama')
+                $('#modalImg').attr('src', imgSrc)
+                $('#modalNama').text(nama)
+            })
+        })
+
+        var myModal = document.getElementById('myModal');
+        myModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget; // Tombol yang di klik
+            var imgSrc = button.getAttribute('data-img'); // Ambil atribut data-img dari tombol
+            var nama = button.getAttribute('data-nama'); // Ambil atribut data-nama dari tombol
+
+            var modalImg = myModal.querySelector('#modalImg'); // Elemen gambar pada modal
+            var modalNama = myModal.querySelector('#modalNama'); // Elemen nama pada modal
+
+            modalImg.src = imgSrc; // Set source gambar pada elemen gambar modal
+            modalNama.textContent = nama; // Set teks nama pada elemen nama modal
+        })
+        </script>
+    </body>
+</html>
