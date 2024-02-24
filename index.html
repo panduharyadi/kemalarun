@@ -56,22 +56,9 @@
                 box-shadow: #000;
             } */
 
-            .overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.8);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .overlay img {
-                max-width: 90%;
-                max-height: 90%;
-            }
+            .previewnya {
+                width: 90%;
+            }            
         </style>
     </head>
     
@@ -1655,10 +1642,10 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px] mt-8">
                     <div class="blog bg-white relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
                         <!-- Change News Image -->
-                        <img src="assets/images/route/21K.png" alt="" class="myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png" data-nama="Rute HM">
+                        <img src="assets/images/route/21K.png" alt="">
 
                         <div class="content p-6">
-                            <a href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Rute HM</a>                            
+                            <a href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5"  class="myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png" data-nama="Rute HM">Rute HM</a>                            
                         </div>
                     </div>
 
@@ -1688,7 +1675,7 @@
                       <div class="modal-content">
                         <div class="modal-body">
                           <h5 id="modalNama" style="color: #EC4899;"></h5>
-                          <img id="modalImg" src="" alt="Image">
+                          <img class="previewnya" id="modalImg" src="" alt="Image">
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #EC4899; border-color: #EC4899;">Close</button>
@@ -1766,18 +1753,12 @@
             })
         })
 
-        var myModal = document.getElementById('myModal');
-        myModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget; // Tombol yang di klik
-            var imgSrc = button.getAttribute('data-img'); // Ambil atribut data-img dari tombol
-            var nama = button.getAttribute('data-nama'); // Ambil atribut data-nama dari tombol
-
-            var modalImg = myModal.querySelector('#modalImg'); // Elemen gambar pada modal
-            var modalNama = myModal.querySelector('#modalNama'); // Elemen nama pada modal
-
-            modalImg.src = imgSrc; // Set source gambar pada elemen gambar modal
-            modalNama.textContent = nama; // Set teks nama pada elemen nama modal
+        document.getElementById('rute-hm').addEventListener('click', () => {
+            document.getElementById('hm-preview').style.display = 'block'
         })
+        document.getElementById('rute-hm').addEventListener('click', () => {
+        document.getElementById('hm-preview').style.display = 'none';
+        });
         </script>
     </body>
 </html>
