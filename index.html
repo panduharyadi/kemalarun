@@ -1662,10 +1662,9 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px] mt-8">
                     <div class="blog bg-white relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
                         <!-- Change News Image -->
-                        <img src="assets/images/route/21K.png" alt="">
+                        <img src="assets/images/route/21K.png" alt="" class="myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png" data-nama="Rute HM">
 
                         <div class="content p-6">
-                            <a href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5"  class="myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png" data-nama="Rute HM">Rute HM</a>                            
                             <a href="" class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5 myImg" data-toggle="modal" data-target="#myModal" data-img="assets/images/route/21K.png">Rute HM</a>                            
                         </div>
                     </div>
@@ -1692,14 +1691,18 @@
 
                 <!-- modalnya -->
                 <div class="modal fade" id="myModal" tabindex="-1">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-body">
-                          <h5 id="modalNama" style="color: #EC4899;"></h5>
-                          <img class="previewnya" id="modalImg" src="" alt="Image">
-                        </div>
-                    </div>
-                </div>
+                                   <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                                       <div class="modal-content">
+                                           <div class="modal-body">
+                                               <h5 id="modalNama" style="color: #EC4899;"></h5>
+                                               <img id="modalImg" src="" alt="Image">
+                                           </div>
+                                           <div class="modal-footer">
+                                               <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #EC4899; border-color: #EC4899;">Close</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
                 
                 
 
